@@ -1,25 +1,73 @@
 <% if user_signed_in? %>
 
-<div class="jumbotron">
-  <%= render 'layouts/title' %>
-    <div class="blockquote-box clearfix col-md-10 col-md-offset-1" align="center" style="padding-bottom: 10px;">
-      <h5 style="color:#CC0767">The following archived webinar(s) are available to view:</h5>
-      <h3>Professor Marcus Drake, <br />Consultant Urological Surgeon, Southmead Hospital, Bristol</h3>
-      <h3 style="color:#CC0767">Friday 4<sup>th</sup> July 2014 at 12.30-13.15</h3>
-      <br />
-      <!-- <img src="assets/archived-webcast.png" class="img-responsive"/> -->
-      <iframe src="//player.vimeo.com/video/100429807" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      <br />
+<div class="title-header-1">
+</div>
 
-      <%= render 'layouts/newfooter' %>
+<div class="container">
+  <div class="blockquote-box clearfix col-md-12" align="left" style="padding-bottom: 10px; margin-top:-75px;">
+        
+    <h3 style="color: #3787ad; margin-top: 5px;">Recorded webinars</h3>
+    <p>The following webinars are available to view:</p>
+    <hr>
+    <br />
 
-    </div>
-
-    <br /> 
+    <div class="row">
+      <div class="col-lg-3" align="center">
+        <img class="img-circle" src="http://www.streamingwell.tv/wp-content/uploads/2015/06/bicycle-th.jpg" alt="Generic placeholder image" width="200" height="200" style="margin-top: 15px; margin-bottom: 15px;">
+      </div>
+      <div class="col-lg-9">
+        <h3 style="color: #3787ad;">National Review of Asthma Deaths (NRAD) one year on: Improving Asthma diagnosis and reducing hospital admissions</h3>
+        <p>Dr Mark L Levy, Clinical Lead, National Review of Asthma Deaths (2011-2014) & Dr Carine Lewis, Senior Analyst, Asthma UK</p>
+        <p>8<sup>th</sup> July 2015 at 12.30-13.15</p>
+        <br />
+        <p><%= link_to "Watch now", archive_jul_8_path, class: "btn btn-inactive no-click" %></p>
+        <br />
       </div>
     </div>
-  </div>
+    
+    <hr>
+    <br />
+    
+    <div class="row">
+      <div class="col-lg-3" align="center">
+        <img class="img-circle" src="http://www.streamingwell.tv/wp-content/uploads/2015/06/running-th.jpg" alt="Generic placeholder image" width="200" height="200" style="margin-top: 15px; margin-bottom: 15px;">
+      </div>
+      <div class="col-lg-9">
+        <h3 style="color: #3787ad;">The PRIMIS Asthma audit tool live demonstration</h3>
+        <p>Lauren Fensome, Learning Consultant (PRIMIS) University of Nottingham</p>
+        <p>16<sup>th</sup> July 2015 at 12.30-13.15</p>
+        <br />
+        <p><%= link_to "Watch now", archive_jul_16_path, class: "btn btn-inactive no-click" %></p>
+        <br />
+      </div>
+    </div>
 
+    <hr>
+    <br />
+
+    <div class="row">
+      <div class="col-lg-3" align="center">
+        <img class="img-circle" src="http://www.streamingwell.tv/wp-content/uploads/2015/06/hiking-th.jpg" alt="Generic placeholder image" width="200" height="200" style="margin-top: 15px; margin-bottom: 15px;">
+      </div>
+      <div class="col-lg-9">
+        <h3 style="color: #3787ad;">Inhaler education - does it make a difference?</h3>
+        <p>Monica Fletcher, Chief Executive of Education for Health</p>
+        <p>9<sup>th</sup> September 2015 at 12.30-13.15</p>
+        <br />
+        <p><%= link_to "Watch now", archive_sept_9_path, class: "btn btn-inactive no-click" %></p>
+        <br />
+      </div>
+    </div>
+    
+    <br />
+    <div class="col-md-12">
+      <%= render 'layouts/pfooter' %>      
+    </div>
+
+</div>
+
+    </div>
+</div>
 
 <% else %>
   <%= render 'layouts/preregistration' %>

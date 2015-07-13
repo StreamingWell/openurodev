@@ -4,7 +4,7 @@ Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
-  config.mailer_sender = "noreply@astellasurology.co.uk"
+  config.mailer_sender = "please-change-me-at-config-initializers-devise@example.com"
 
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"
@@ -92,7 +92,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = "4a06886f8ee7b7e804a02da4148e576ada6556f774148eca098334a71ee47457cae5dcb2ffeca61d636b793fb5a4e6cb7de9431bf3d3f3d7d07c0dc3ea855f34"
+  # config.pepper = "c2ff0471dc18745130a628e9ad35efe4710621084605b3dfffca38fe709b6bbef3afe16502ecdce3a6c77ebe712963cc1054bb867dbe97de50fc6aa7eae18291"
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -132,7 +132,7 @@ Devise.setup do |config|
 
   # ==> Configuration for :validatable
   # Range for password length. Default is 8..128.
-  config.password_length = 6..128
+  config.password_length = 8..128
 
   # Email regex used to validate email formats. It simply asserts that
   # one (and only one) @ exists in the given string. This is mainly
@@ -173,7 +173,7 @@ Devise.setup do |config|
   # ==> Configuration for :recoverable
   #
   # Defines which key will be used when recovering the password for an account
-  config.reset_password_keys = [ :email ]
+  # config.reset_password_keys = [ :email ]
 
   # Time interval you can reset your password with a reset password key.
   # Don't put a too small interval or your users won't have the time to
